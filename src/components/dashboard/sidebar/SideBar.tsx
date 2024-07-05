@@ -17,7 +17,7 @@ const SideBar = () => {
   };
 
   return (
-    <div className="h-screen max-h-[99%] flex flex-col justify-between rounded">
+    <div className="min-h-screen flex flex-col justify-between rounded">
       <div>
         <div className="flex items-center p-4 h-16 hover:bg-gray-100 dark:hover:bg-zinc-800/30 self-center">
           <MdAccountCircle size={20} />
@@ -60,7 +60,7 @@ const SideBar = () => {
           </div>
         ))}
       </div>
-      <div className="p-4">PlayOnn</div>
+      <div className="block m-4">PlayOnn</div>
     </div>
   );
 };
