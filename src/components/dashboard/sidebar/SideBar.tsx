@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link";
 import { useState } from "react";
 import { MdAccountCircle, MdArrowDropDownCircle } from "react-icons/md";
