@@ -1,5 +1,5 @@
 
-import { MdDashboard } from "react-icons/md";
+import { MdDashboard, MdLogout } from "react-icons/md";
 
 export type iSideBarMenu = {
   title: string;
@@ -79,7 +79,7 @@ export const sideBarMenu = [
       {
         title: "Logout",
         href: "/logout",
-        icon: <MdDashboard />,
+        icon: <MdLogout />,
       },
     ],
   },
