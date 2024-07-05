@@ -12,12 +12,12 @@ export default function NavBar() {
       <div className="first-letter:uppercase self-center">
           {pathname.split("/").pop()}
       </div>
-      <div className="flex first-letter:uppercase items-center rounded bg-slate-600 h-8 gap-2">
-        <MdSearch size={20}/>
-        <input type="text" className=" bg-slate-600 self-center" placeholder="Buscar"/>
-      </div>
-      <div className="flex first-letter:uppercase items-center rounded  h-8 gap-2">
-        <MdNotifications size={20}/>
+      <div className="flex first-letter:uppercase items-center rounded bg-slate-600 h-8 ml-4 gap-2">
+        <MdSearch size={20} className="ml-2"/>
+        <input type="text" className="bg-transparent self-center" placeholder="Buscar"/>
+        <div className="flex first-letter:uppercase items-center bg-slate-700 h-8 pl-4">
+          <MdNotifications size={20}/>
+        </div>
       </div>
     </div>
     </div>
