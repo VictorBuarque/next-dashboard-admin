@@ -17,7 +17,7 @@ const SideBar = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col justify-between rounded">
+    <div className="h-[100%] flex flex-col justify-between rounded">
       <div>
         <div className="flex items-center p-4 h-16 hover:bg-gray-100 dark:hover:bg-zinc-800/30 self-center">
           <MdAccountCircle size={20} />
