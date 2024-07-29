@@ -1,5 +1,5 @@
 
-import { MdDashboard, MdLogout } from "react-icons/md";
+import { MdAnalytics, MdAttachMoney, MdDashboard, MdHelp, MdLogout, MdPeopleOutline, MdSettings, MdShoppingBag, MdSupervisedUserCircle, MdWork } from "react-icons/md";
 
 export type iSideBarMenu = {
   title: string;
@@ -17,49 +17,19 @@ export const sideBarMenu = [
         icon: <MdDashboard />,
       },
       {
-        title: "Contatos",
-        href: "/dashboard/contacts",
-        icon: <MdDashboard />,
-      },
-      {
-        title: "Clientes",
-        href: "/dashboard/clients",
-        icon: <MdDashboard />,
-      },
-      {
-        title: "Redes",
-        href: "/dashboard/store-network",
-        icon: <MdDashboard />,
-      },
-      {
-        title: "Lojas",
-        href: "/dashboard/stores",
-        icon: <MdDashboard />,
-      },
-      {
-        title: "Terminais",
-        href: "/dashboard/terminals",
-        icon: <MdDashboard />,
-      },
-      {
-        title: "Conteúdos",
-        href: "/dashboard/store-network",
-        icon: <MdDashboard />,
-      },
-      {
-        title: "Playlists",
-        href: "/dashboard/playlists",
-        icon: <MdDashboard />,
-      },
-      {
-        title: "Agendamentos",
-        href: "/dashboard/schedules",
-        icon: <MdDashboard />,
-      },
-      {
         title: "Usuários",
         href: "/dashboard/users",
-        icon: <MdDashboard />,
+        icon: <MdSupervisedUserCircle />,
+      },
+      {
+        title: "Produtos",
+        href: "/dashboard/products",
+        icon: <MdShoppingBag />,
+      },
+      {
+        title: "Transações",
+        href: "/dashboard/transactions",
+        icon: <MdAttachMoney />,
       },
     ],
   },
@@ -67,15 +37,35 @@ export const sideBarMenu = [
     title: "Analytics",
     list: [
       {
+        title: "Receitas",
+        href: "/dashboard/revenue",
+        icon: <MdWork />,
+      },
+      {
         title: "Reports",
         href: "/dashboard/reports",
-        icon: <MdDashboard />,
+        icon: <MdAnalytics />,
+      },
+      {
+        title: "Equipe",
+        href: "/dashboard/teams",
+        icon: <MdPeopleOutline />,
       },
     ],
   },
   {
     title: "User",
     list: [
+      {
+        title: "Settings",
+        href: "/settings",
+        icon: <MdSettings />,
+      },
+      {
+        title: "Help",
+        href: "/help",
+        icon: <MdHelp />,
+      },
       {
         title: "Logout",
         href: "/logout",
