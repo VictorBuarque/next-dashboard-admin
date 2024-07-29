@@ -16,9 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <div className={inter.className}>
-        <body className="rounded">{children}</body>
-      </div>
+      <body className={inter.className}>
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
