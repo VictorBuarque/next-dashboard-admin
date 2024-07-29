@@ -8,7 +8,7 @@ export default function Layout({
 }>) {
   return (
     <div className="flex min-w-screen min-h-screen bg-slate-800 py-4">
-      <div className="w-[20%]">
+      <div className="w-[15%]">
         <SideBar />
       </div>
       <div className="w-full">
