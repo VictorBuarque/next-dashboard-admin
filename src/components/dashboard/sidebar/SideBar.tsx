@@ -22,9 +22,9 @@ const SideBar = () => {
   };
 
   return (
-    <div className="w-full h-[100%] flex flex-col justify-between rounded ">
+    <div className="w-full h-[100%] flex flex-col justify-between rounded bg-slate-200 ml-2">
       <div className="mx-2">
-        <div className="flex items-center p-4 h-16 self-center">
+        <div className="flex items-center p-4 h-16 self-center border-b-slate-300 border">
           <MdAccountCircle size={30} />
           <div className="flex flex-col">
             <span className="ml-4 font-semibold">Victor Gabriel</span>
@@ -34,10 +34,10 @@ const SideBar = () => {
         {sideBarMenu.map((category) => (
           <div key={category.title}>
             <div
-              className="flex items-center justify-between p-4 cursor-pointer hover:text-blue-500"
+              className="flex items-center justify-between p-4 cursor-pointer hover:text-blue-600"
               onClick={() => toggleCategory(category.title)}
             >
-              <p className="text-sm font-semibold">{category.title}</p>
+              <p className="text-sm font-semibold ">{category.title}</p>
               <div className="w-5 h-5 rounded-full flex items-center justify-center">
                 <MdArrowDropDownCircle
                   size={20}
@@ -55,8 +55,8 @@ const SideBar = () => {
                   <li
                     key={item.href}
                     onClick={() => handleItemClick(item.href)}
-                    className={`cursor-pointer ${
-                      activeItem === item.href ? "bg-gray-50 text-blue-800 rounded  " : "hover:text-blue-500"
+                    className={`cursor-pointer border-b border-b-slate-300 ${
+                      activeItem === item.href ? "bg-gray-50 text-blue-800 rounded  " : "hover:text-blue-600"
                     }`}
                   >
                     <Link href={item.href}>

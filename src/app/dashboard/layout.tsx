@@ -7,7 +7,7 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="flex min-w-screen min-h-screen bg-slate-800 py-4">
+    <div className="flex min-w-screen min-h-screen bg-white text-black py-4">
       <div className="w-[15%]">
         <SideBar />
       </div>
