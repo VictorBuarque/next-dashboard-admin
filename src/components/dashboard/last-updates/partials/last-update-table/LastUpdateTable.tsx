@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   Table,
   TableBody,
@@ -10,119 +11,124 @@ import {
 
 export default function LastUpdateTable() {
   return (
-    <Table>
-      <TableHeader>
-        <TableRow>
-          <TableHead className="w-[100px]">Mod. Terminal</TableHead>
-          <TableHead>Rede</TableHead>
-          <TableHead>Nome Terminal</TableHead>
-          <TableHead>Tipo Terminal</TableHead>
-          <TableHead>Ult. Sinc</TableHead>
-          <TableHead>Data Att. Playlist</TableHead>
-          <TableHead>Status</TableHead>
-        </TableRow>
-      </TableHeader>
-      <TableBody>
-        <TableRow className="uppercase">
-          <TableCell className="font-medium">PlayONN</TableCell>
-          <TableCell className="font-medium">CSP</TableCell>
-          <TableCell className="font-medium">csp_salvador_balcao_1</TableCell>
-          <TableCell className="font-medium">Horizontal</TableCell>
-          <TableCell className="font-medium">18/04/2023 18:16</TableCell>
-          <TableCell className="font-medium">03/06/2024 17:05</TableCell>
-          <TableCell className="font-medium">Desatualizado</TableCell>
-        </TableRow>
-        <TableRow className="uppercase">
-          <TableCell className="font-medium">PlayONN</TableCell>
-          <TableCell className="font-medium">CSP</TableCell>
-          <TableCell className="font-medium">csp_salvador_balcao_2</TableCell>
-          <TableCell className="font-medium">Horizontal</TableCell>
-          <TableCell className="font-medium">18/04/2023 18:16</TableCell>
-          <TableCell className="font-medium">03/06/2024 17:05</TableCell>
-          <TableCell className="font-medium">Desatualizado</TableCell>
-        </TableRow>
-        <TableRow className="uppercase">
-          <TableCell className="font-medium">PlayONN</TableCell>
-          <TableCell className="font-medium">CSP</TableCell>
-          <TableCell className="font-medium">csp_salvador_balcao_3</TableCell>
-          <TableCell className="font-medium">Horizontal</TableCell>
-          <TableCell className="font-medium">18/04/2023 18:16</TableCell>
-          <TableCell className="font-medium">03/06/2024 17:05</TableCell>
-          <TableCell className="font-medium">Atualizado</TableCell>
-        </TableRow>
-        <TableRow className="uppercase">
-          <TableCell className="font-medium">PlayONN</TableCell>
-          <TableCell className="font-medium">CSP</TableCell>
-          <TableCell className="font-medium">csp_salvador_balcao_4</TableCell>
-          <TableCell className="font-medium">Horizontal</TableCell>
-          <TableCell className="font-medium">18/04/2023 18:16</TableCell>
-          <TableCell className="font-medium">03/06/2024 17:05</TableCell>
-          <TableCell className="font-medium">Atualizado</TableCell>
-        </TableRow>
-        <TableRow className="uppercase">
-          <TableCell className="font-medium">PlayONN</TableCell>
-          <TableCell className="font-medium">CSP</TableCell>
-          <TableCell className="font-medium">csp_salvador_balcao_5</TableCell>
-          <TableCell className="font-medium">Horizontal</TableCell>
-          <TableCell className="font-medium">18/04/2023 18:16</TableCell>
-          <TableCell className="font-medium">03/06/2024 17:05</TableCell>
-          <TableCell className="font-medium">Atualizado</TableCell>
-        </TableRow>
-        {/* <TableRow className="uppercase">
-          <TableCell className="font-medium">PlayONN</TableCell>
-          <TableCell className="font-medium">CSP</TableCell>
-          <TableCell className="font-medium">csp_salvador_balcao_6</TableCell>
-          <TableCell className="font-medium">Horizontal</TableCell>
-          <TableCell className="font-medium">18/04/2023 18:16</TableCell>
-          <TableCell className="font-medium">03/06/2024 17:05</TableCell>
-          <TableCell className="font-medium">Atualizado</TableCell>
-        </TableRow>
-        <TableRow className="uppercase">
-          <TableCell className="font-medium">PlayONN</TableCell>
-          <TableCell className="font-medium">CSP</TableCell>
-          <TableCell className="font-medium">csp_salvador_balcao_7</TableCell>
-          <TableCell className="font-medium">Horizontal</TableCell>
-          <TableCell className="font-medium">18/04/2023 18:16</TableCell>
-          <TableCell className="font-medium">03/06/2024 17:05</TableCell>
-          <TableCell className="font-medium">Atualizado</TableCell>
-        </TableRow>
-        <TableRow className="uppercase">
-          <TableCell className="font-medium">PlayONN</TableCell>
-          <TableCell className="font-medium">CSP</TableCell>
-          <TableCell className="font-medium">csp_salvador_balcao_6</TableCell>
-          <TableCell className="font-medium">Horizontal</TableCell>
-          <TableCell className="font-medium">18/04/2023 18:16</TableCell>
-          <TableCell className="font-medium">03/06/2024 17:05</TableCell>
-          <TableCell className="font-medium">Atualizado</TableCell>
-        </TableRow>
-        <TableRow className="uppercase">
-          <TableCell className="font-medium">PlayONN</TableCell>
-          <TableCell className="font-medium">CSP</TableCell>
-          <TableCell className="font-medium">csp_salvador_balcao_8</TableCell>
-          <TableCell className="font-medium">Horizontal</TableCell>
-          <TableCell className="font-medium">18/04/2023 18:16</TableCell>
-          <TableCell className="font-medium">03/06/2024 17:05</TableCell>
-          <TableCell className="font-medium">Atualizado</TableCell>
-        </TableRow>
-        <TableRow className="uppercase">
-          <TableCell className="font-medium">PlayONN</TableCell>
-          <TableCell className="font-medium">CSP</TableCell>
-          <TableCell className="font-medium">csp_salvador_balcao_9</TableCell>
-          <TableCell className="font-medium">Horizontal</TableCell>
-          <TableCell className="font-medium">18/04/2023 18:16</TableCell>
-          <TableCell className="font-medium">03/06/2024 17:05</TableCell>
-          <TableCell className="font-medium">Atualizado</TableCell>
-        </TableRow>
-        <TableRow className="uppercase">
-          <TableCell className="font-medium">PlayONN</TableCell>
-          <TableCell className="font-medium">CSP</TableCell>
-          <TableCell className="font-medium">csp_salvador_balcao_10</TableCell>
-          <TableCell className="font-medium">Horizontal</TableCell>
-          <TableCell className="font-medium">18/04/2023 18:16</TableCell>
-          <TableCell className="font-medium">03/06/2024 17:05</TableCell>
-          <TableCell className="font-medium">Atualizado</TableCell>
-        </TableRow> */}
-      </TableBody>
-    </Table>
+    <div className="flex bg-slate-200 rounded">
+      <Table>
+        <TableHeader  className="text-black  rounded">
+          <TableRow >
+            <TableHead className="w-[400px] text-center">Name</TableHead>
+            <TableHead className=" text-center">Status</TableHead>
+            <TableHead className=" text-center">Date</TableHead>
+            <TableHead className=" text-center">Amount</TableHead>
+          </TableRow>
+        </TableHeader>
+        <TableBody className="uppercase font-medium text-center">
+          <TableRow className="border-b border-b-slate-300">
+            <TableCell>
+              <div className="flex gap-2 justify-center">
+                <Image
+                  src="/images/noavatar.jpg"
+                  width={30}
+                  height={30}
+                  alt="Avatar"
+                  className="rounded-full object-cover"
+                />
+                <span className="self-center">Victor Buarque</span>
+              </div>
+            </TableCell>
+            <TableCell>
+              <span className="bg-orange-400 rounded p-1 text-center self-center">
+                pending
+              </span>
+            </TableCell>
+            <TableCell>14.08.2024</TableCell>
+            <TableCell>$3.200</TableCell>
+          </TableRow>
+          <TableRow className="border-b border-b-slate-300">
+            <TableCell>
+              <div className="flex gap-2 justify-center">
+                <Image
+                  src="/images/noavatar.jpg"
+                  width={30}
+                  height={30}
+                  alt="Avatar"
+                  className="rounded-full object-cover"
+                />
+                <span className="self-center">Victor Buarque</span>
+              </div>
+            </TableCell>
+            <TableCell>
+              <span className="bg-red-700 rounded p-1 text-center self-center">
+                canceled
+              </span>
+            </TableCell>
+            <TableCell>14.08.2024</TableCell>
+            <TableCell>$3.200</TableCell>
+          </TableRow>
+          <TableRow className="border-b border-b-slate-300">
+            <TableCell>
+              <div className="flex gap-2 justify-center">
+                <Image
+                  src="/images/noavatar.jpg"
+                  width={30}
+                  height={30}
+                  alt="Avatar"
+                  className="rounded-full object-cover"
+                />
+                <span className="self-center">Victor Buarque</span>
+              </div>
+            </TableCell>
+            <TableCell>
+              <span className="bg-green-500 rounded p-1 text-center self-center">
+                done
+              </span>
+            </TableCell>
+            <TableCell>14.08.2024</TableCell>
+            <TableCell>$3.200</TableCell>
+          </TableRow>
+          <TableRow className="border-b  border-b-slate-300">
+            <TableCell>
+              <div className="flex gap-2 justify-center">
+                <Image
+                  src="/images/noavatar.jpg"
+                  width={30}
+                  height={30}
+                  alt="Avatar"
+                  className="rounded-full object-cover"
+                />
+                <span className="self-center">Victor Buarque</span>
+              </div>
+            </TableCell>
+            <TableCell>
+              <span className="bg-orange-400 rounded p-1  text-center self-center">
+                pending
+              </span>
+            </TableCell>
+            <TableCell>14.08.2024</TableCell>
+            <TableCell>$3.200</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell>
+              <div className="flex gap-2 justify-center">
+                <Image
+                  src="/images/noavatar.jpg"
+                  width={30}
+                  height={30}
+                  alt="Avatar"
+                  className="rounded-full object-cover"
+                />
+                <span className="self-center">Victor Buarque</span>
+              </div>
+            </TableCell>
+            <TableCell>
+              <span className="bg-green-500 rounded p-1 text-center self-center">
+                done
+              </span>
+            </TableCell>
+            <TableCell>14.08.2024</TableCell>
+            <TableCell>$3.200</TableCell>
+          </TableRow>
+        </TableBody>
+      </Table>
+    </div>
   );
 }
